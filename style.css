@@ -112,7 +112,6 @@ img {
 
 @media (max-width: 800px){
 .container {
-	background-color : red;
 	grid-template-columns: 1fr;
 	margin: auto;
 	}
