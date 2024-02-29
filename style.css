@@ -1,37 +1,103 @@
 /* Write some CSS below */
+
+@font-face {
+  font-family: 'BebasNeue-Regular'; 
+  src: url('BebasNeue-Regular.ttf'); 
+}
+
+
 h1 {
 	color: black;
-	font-family:bodoni;
+	font-family:BebasNeue-Regular;
+  	text-align: center;
+}
+h1:hover {
+  color: royalblue;
 }
 
 h2 {
-	color: hotpink;
+	color: royalblue;
 }
 
 img {
-	border-radius: 10%;
+	border-radius: 0%;
+
+	
+}
+
+
+.button-blue {
+  background-color: #1A48E3;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 4px;
+  display: inline-block;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.button-blue:hover {
+  background-color: #0D1EC6;
+  color: navajowhite;
 }
 
 
 
-/* */
 .banner {
-  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/background.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/paysage.jpeg');
   background-size: cover;
   background-position: center;
-  padding: 150px 0;
-  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 500px; /* Ajustez la hauteur selon vos besoins */
+  overflow: hidden; /* Pour que la bannière ait la hauteur de l'image */
 }
+
+.image-left {
+  float: left; /* Positionner l'image à gauche */
+  width: 40%; /* Définir la largeur de l'image */
+}
+
+.text-right {
+  float: right; /* Positionner le texte à gauche */
+  width: 60%; /* Définir la largeur du texte */
+  text-align: right; /* Aligner le texte à gauche */
+}
+
+.center-image {
+  max-width: 100%; /* Ajustez la taille maximale de l'image au besoin */
+  max-height: 100%; /* Ajustez la taille maximale de l'image au besoin */
+}
+
+
 
 .banner h1 {
+  font-family:BebasNeue-Regular;
   color: white;
-  font-size: 45px;
-  margin: 0;
+  font-size: 55px;
+  text-align: left;
+  margin: 40px;
 }
 
+
 .banner p {
+  font-family:BebasNeue-Regular;
   color: white;
-  font-size: 24px;
+  font-size: 35px;
+}
+.subtitles p  {
+	font-family:Overpass;
+	color:white;
+	opacity: 0.8;
+	font-size: 24px;
+}
+
+.banner h3 {
+  font-family:Arial;
+  color: white;
+  font-size: 18px;
+  text-align: left;
+  margin: 40px;
 }
 
 .container{ 
@@ -73,8 +139,13 @@ img {
   margin-bottom: 0;
 }
 
+.card:hover {
+  background-color: floralwhite;
+}
+
+
 .footer {
-  background: #404042;
+  background: #1A48E3;
   text-align: center;
   padding: 24px 0;
 }
